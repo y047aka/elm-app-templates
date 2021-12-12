@@ -52,6 +52,6 @@ view : Model -> Document Msg
 view _ =
     { title = ""
     , body =
-        [ main_ [] [ text "elm-supercell" ]
+        [ main_ [] [ text "parcel" ]
         ]
     }
