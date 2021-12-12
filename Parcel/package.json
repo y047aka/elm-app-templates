@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "@parcel/transformer-elm": "^2.0.1",
+    "elm-format": "^0.8.5",
+    "elm-hot": "^1.1.6",
+    "elm-test": "^0.19.1-revision7"
+  },
+  "dependencies": {
+    "elm": "^0.19.1-5",
+    "parcel": "^2.0.1"
+  }
+}
