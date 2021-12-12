@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "elm-live src/Main.elm --dir=./dist --open -- --debug --output=./dist/index.html",
+    "build": ""
+  },
+  "dependencies": {
+    "elm": "^0.19.1-5"
+  },
+  "devDependencies": {
+    "elm-live": "^4.0.2"
+  }
+}
