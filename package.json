@@ -14,7 +14,7 @@
     "elm_reactor_start": "npm run start -w elm_reactor",
     "elm_reactor_build": "npm run build -w elm_reactor",
     "elm-live_start": "npm run start -w elm-live",
-    "elm-live_build": "",
+    "elm-live_build": "npm run build -w elm-live",
     "webpack_start": "npm run start -w webpack",
     "webpack_build": "npm run build -w webpack",
     "create-elm-app_start": "npm run start -w create-elm-app",

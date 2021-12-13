@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "start": "elm-live src/Main.elm --dir=./dist --open -- --debug --output=./dist/index.html",
-    "build": ""
+    "build": "elm make src/Main.elm --output=dist/index.html --optimize"
   },
   "dependencies": {
     "elm": "^0.19.1-5"
