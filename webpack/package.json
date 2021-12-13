@@ -1,4 +1,6 @@
 {
+  "name": "webpack",
+  "private": true,
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack serve --mode development --port 3000"

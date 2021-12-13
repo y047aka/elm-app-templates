@@ -1,6 +1,8 @@
 {
+  "name": "elm_reactor",
+  "private": true,
   "scripts": {
-    "start": "elm reactor",
+    "start": "cd src && elm reactor",
     "build": ""
   },
   "dependencies": {

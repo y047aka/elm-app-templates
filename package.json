@@ -1,0 +1,29 @@
+{
+  "name": "elm-app-templates",
+  "private": true,
+  "workspaces": [
+    "elm_reactor",
+    "elm-live",
+    "webpack",
+    "create-elm-app",
+    "parcel",
+    "esbuild",
+    "vite"
+  ],
+  "scripts": {
+    "elm_reactor_start": "npm run start -w elm_reactor",
+    "elm_reactor_build": "",
+    "elm-live_start": "npm run start -w elm-live",
+    "elm-live_build": "",
+    "webpack_start": "npm run start -w webpack",
+    "webpack_build": "npm run build -w webpack",
+    "create-elm-app_start": "npm run start -w create-elm-app",
+    "create-elm-app_build": "npm run build -w create-elm-app",
+    "parcel_start": "npm run start -w parcel",
+    "parcel_build": "npm run build -w parcel",
+    "esbuild_start": "",
+    "esbuild_build": "npm run build -w esbuild",
+    "vite_start": "npm run start -w vite",
+    "vite_build": "npm run build -w vite"
+  }
+}

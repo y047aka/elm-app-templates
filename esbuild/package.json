@@ -1,4 +1,6 @@
 {
+  "name": "esbuild",
+  "private": true,
   "scripts": {
     "build": "node ./build.js",
     "watch": "node ./build.js --watch"

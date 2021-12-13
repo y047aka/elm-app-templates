@@ -1,4 +1,6 @@
 {
+  "name": "create-elm-app",
+  "private": true,
   "scripts": {
     "start": "elm-app start",
     "build": "elm-app build"
