@@ -1,4 +1,11 @@
-dist/
-elm-stuff/
-node_modules/
+# Dependency directories
+node_modules
+
+# elm-package generated files
+elm-stuff
+
+# Distribution
+dist
+
+# webpack generated files
 tmp/

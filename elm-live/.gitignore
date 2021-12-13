@@ -1,8 +1,8 @@
-# Dependency directory
+# Dependency directories
 node_modules
 
-# Elm Dependency directory
+# elm-package generated files
 elm-stuff
 
-# The directory at "npm start"
+# Distribution
 dist

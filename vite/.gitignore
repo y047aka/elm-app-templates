@@ -1,5 +1,8 @@
-# Dependency directory
+# Dependency directories
 node_modules
 
-# Elm Dependency directory
+# elm-package generated files
 elm-stuff
+
+# Distribution
+dist

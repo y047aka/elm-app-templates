@@ -1,11 +1,11 @@
-# Dependency directory
+# Dependency directories
 node_modules
 
-# Parcel Cash directory
+# parcel generated files
 .parcel-cache
 
-# Elm Dependency directory
+# elm-package generated files
 elm-stuff
 
-# Default directory at "npm start"
+# Distribution
 dist
