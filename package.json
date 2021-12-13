@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "elm_reactor_start": "npm run start -w elm_reactor",
-    "elm_reactor_build": "",
+    "elm_reactor_build": "npm run build -w elm_reactor",
     "elm-live_start": "npm run start -w elm-live",
     "elm-live_build": "",
     "webpack_start": "npm run start -w webpack",
