@@ -2,8 +2,8 @@
   "name": "parcel",
   "private": true,
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "devDependencies": {
     "@parcel/transformer-elm": "^2.0.1",
