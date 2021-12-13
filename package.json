@@ -25,5 +25,8 @@
     "esbuild_build": "npm run build -w esbuild",
     "vite_start": "npm run start -w vite",
     "vite_build": "npm run build -w vite"
+  },
+  "devDependencies": {
+    "elm-format": "^0.8.5"
   }
 }
