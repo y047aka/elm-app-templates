@@ -7,7 +7,6 @@
     "build": "vite build"
   },
   "dependencies": {
-    "elm": "^0.19.1-5",
     "vite": "^2.7.1",
     "vite-plugin-elm": "^2.5.1"
   }
