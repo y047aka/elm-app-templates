@@ -1,3 +1,5 @@
-import { Elm } from './Main.elm'
+import { Elm } from "./Main.elm"
 
-const app = Elm.Main.init();
+Elm.Main.init({
+  node: document.querySelector("main")
+})

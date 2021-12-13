@@ -1,7 +1,6 @@
 {
   "name": "vite",
   "private": true,
-  "main": "index.js",
   "scripts": {
     "start": "vite",
     "build": "vite build"

@@ -1,12 +1,12 @@
 module Main exposing (main)
 
-import Browser exposing (Document)
-import Html exposing (main_, text)
+import Browser
+import Html exposing (Html, text)
 
 
 main : Program () Model Msg
 main =
-    Browser.document
+    Browser.element
         { init = init
         , update = update
         , view = view
@@ -46,10 +46,6 @@ update msg model =
 -- VIEW
 
 
-view : Model -> Document Msg
+view : Model -> Html Msg
 view _ =
-    { title = ""
-    , body =
-        [ main_ [] [ text "vite" ]
-        ]
-    }
+    text "vite"
