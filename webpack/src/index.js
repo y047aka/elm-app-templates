@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
-require('./index.html');
+require("./index.html");
 var Elm = require('./Main.elm').Elm;
 
-var app = Elm.Main.init({
-  node: document.getElementById('main')
+Elm.Main.init({
+  node: document.getElementById("root")
 });
