@@ -6,7 +6,6 @@
     "watch": "node ./build.js --watch"
   },
   "dependencies": {
-    "elm": "^0.19.1-5",
     "esbuild": "^0.14.2",
     "esbuild-plugin-elm": "^0.0.7"
   }
