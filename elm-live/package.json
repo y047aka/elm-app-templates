@@ -3,10 +3,17 @@
   "private": true,
   "scripts": {
     "start": "elm-live src/Main.elm --dir=./dist --open -- --debug --output=./dist/index.html",
-    "build": "elm make src/Main.elm --output=dist/index.html --optimize"
+    "precompile": "cpx src/index.html dist",
+    "compile": "elm make src/Main.elm --optimize --output=dist/elm.optimized.js",
+    "minify": "google-closure-compiler --js=dist/elm.optimized.js --js_output_file=dist/elm.js",
+    "postminify": "rimraf dist/elm.optimized.js",
+    "build": "npm run compile && npm run minify"
   },
   "dependencies": {
-    "elm": "^0.19.1-5"
+    "cpx2": "^4.0.0",
+    "elm": "^0.19.1-5",
+    "google-closure-compiler": "^20211201.0.0",
+    "rimraf": "^3.0.2"
   },
   "devDependencies": {
     "elm-live": "^4.0.2"
