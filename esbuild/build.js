@@ -1,15 +1,16 @@
-const esbuild = require('esbuild');
-const ElmPlugin = require('esbuild-plugin-elm');
+const esbuild = require("esbuild");
+const ElmPlugin = require("esbuild-plugin-elm");
 
 esbuild.build({
-  entryPoints: ['src/index.js'],
+  logLevel: "info",
+  entryPoints: ["src/index.js"],
   bundle: true,
-  outdir: 'dist',
-  watch: process.argv.includes('--watch'),
+  outdir: "dist",
+  watch: process.argv.includes("--watch"),
   plugins: [
     ElmPlugin({
       debug: true,
       clearOnWatch: true,
     }),
   ],
-}).catch(_e => process.exit(1))
+}).catch(() => process.exit(1));

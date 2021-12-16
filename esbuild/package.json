@@ -3,10 +3,11 @@
   "private": true,
   "scripts": {
     "build": "node ./build.js",
-    "watch": "node ./build.js --watch"
+    "watch": "node ./build.js --watch",
+    "start": "node ./build.js --watch & http-server"
   },
   "dependencies": {
-    "esbuild": "^0.14.2",
-    "esbuild-plugin-elm": "^0.0.7"
+    "esbuild": "^0.14.5",
+    "esbuild-plugin-elm": "^0.0.8"
   }
 }
