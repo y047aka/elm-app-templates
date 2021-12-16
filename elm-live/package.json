@@ -2,8 +2,8 @@
   "name": "elm-live",
   "private": true,
   "scripts": {
-    "start": "elm-live src/Main.elm --dir=./dist --open -- --debug --output=./dist/index.html",
-    "precompile": "cpx src/index.html dist",
+    "start": "elm-live src/Main.elm --hot --open -- --debug --output=elm.js",
+    "precompile": "cpx index.html dist",
     "compile": "elm make src/Main.elm --optimize --output=dist/elm.optimized.js",
     "minify": "google-closure-compiler --js=dist/elm.optimized.js --js_output_file=dist/elm.js",
     "postminify": "rimraf dist/elm.optimized.js",
