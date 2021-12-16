@@ -2,9 +2,8 @@
   "name": "esbuild",
   "private": true,
   "scripts": {
-    "build": "node ./build.js",
-    "watch": "node ./build.js --watch",
-    "start": "node ./build.js --watch & http-server"
+    "start": "node ./serve.js",
+    "build": "node ./build.js"
   },
   "dependencies": {
     "esbuild": "^0.14.5",

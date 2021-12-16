@@ -21,7 +21,7 @@
     "create-elm-app_build": "npm run build -w create-elm-app",
     "parcel_start": "npm run start -w parcel",
     "parcel_build": "npm run build -w parcel",
-    "esbuild_start": "",
+    "esbuild_start": "npm run start -w esbuild",
     "esbuild_build": "npm run build -w esbuild",
     "vite_start": "npm run start -w vite",
     "vite_build": "npm run build -w vite"
