@@ -7,7 +7,6 @@
   },
   "devDependencies": {
     "@parcel/transformer-elm": "^2.0.1",
-    "elm-hot": "^1.1.6",
     "elm-test": "^0.19.1-revision7"
   },
   "dependencies": {
