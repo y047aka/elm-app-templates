@@ -1,7 +1,8 @@
 module Main exposing (main)
 
 import Browser
-import Html exposing (Html, text)
+import Html exposing (Html, button, div, text)
+import Html.Events exposing (onClick)
 
 
 main : Program () Model Msg
@@ -19,12 +20,12 @@ main =
 
 
 type alias Model =
-    {}
+    Int
 
 
 init : () -> ( Model, Cmd Msg )
 init _ =
-    ( {}, Cmd.none )
+    ( 0, Cmd.none )
 
 
 
@@ -32,14 +33,18 @@ init _ =
 
 
 type Msg
-    = NoOp
+    = Increment
+    | Decrement
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        NoOp ->
-            ( model, Cmd.none )
+        Increment ->
+            ( model + 1, Cmd.none )
+
+        Decrement ->
+            ( model - 1, Cmd.none )
 
 
 
@@ -47,5 +52,10 @@ update msg model =
 
 
 view : Model -> Html Msg
-view _ =
-    text "elm-live"
+view model =
+    div []
+        [ div [] [ text "elm-live" ]
+        , button [ onClick Decrement ] [ text "-" ]
+        , div [] [ text (String.fromInt model) ]
+        , button [ onClick Increment ] [ text "+" ]
+        ]
