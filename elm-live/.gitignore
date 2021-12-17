@@ -4,8 +4,5 @@ node_modules
 # elm-package generated files
 elm-stuff
 
-# `npm start` generated files
-elm.js
-
 # Distribution
 dist
