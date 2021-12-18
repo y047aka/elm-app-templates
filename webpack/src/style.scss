@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic,
+    "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo,
+    sans-serif;
+}
+
+body {
+  color: #999;
+}
+
+header {
+  margin: 1em auto;
+  text-align: center;
+  font-size: 3rem;
+}
+
+header + div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+button {
+  width: 1.25em;
+  text-align: center;
+  font-size: 3rem;
+  background-color: #999;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button + div {
+  min-width: 2em;
+  text-align: center;
+  font-size: 3rem;
+}

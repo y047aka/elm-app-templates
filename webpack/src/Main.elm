@@ -54,8 +54,7 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div []
-        [ div [] [ text "webpack" ]
-        , button [ onClick Decrement ] [ text "-" ]
+        [ button [ onClick Decrement ] [ text "-" ]
         , div [] [ text (String.fromInt model) ]
         , button [ onClick Increment ] [ text "+" ]
         ]
