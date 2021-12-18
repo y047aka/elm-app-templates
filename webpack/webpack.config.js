@@ -1,8 +1,7 @@
-var path = require('path');
-
 module.exports = {
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.html$/,
         exclude: /node_modules/,
         loader: 'file-loader'
@@ -14,10 +13,8 @@ module.exports = {
       }
     ]
   },
-
   devServer: {
-    contentBase: path.join(__dirname, "src"),
-    stats: 'errors-only'
+    static: "src",
+    open: true
   },
-
 };
