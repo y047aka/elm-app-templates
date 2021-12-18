@@ -1,8 +1,8 @@
 "use strict";
 
-require("./index.html");
+import "./index.html";
 import "./style.scss";
-var Elm = require('./Main.elm').Elm;
+import { Elm } from "./Main.elm";
 
 Elm.Main.init({
   node: document.getElementById("root")
