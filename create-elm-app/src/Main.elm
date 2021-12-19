@@ -1,8 +1,7 @@
 module Main exposing (main)
 
 import Browser
-import Html exposing (Html, button, div, img, text)
-import Html.Attributes exposing (src)
+import Html exposing (Html, button, div, text)
 import Html.Events exposing (onClick)
 
 
@@ -55,9 +54,7 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div []
-        [ img [ src "/logo.svg" ] []
-        , div [] [ text "create-elm-app" ]
-        , button [ onClick Decrement ] [ text "-" ]
+        [ button [ onClick Decrement ] [ text "-" ]
         , div [] [ text (String.fromInt model) ]
         , button [ onClick Increment ] [ text "+" ]
         ]

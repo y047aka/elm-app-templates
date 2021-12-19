@@ -9,18 +9,55 @@
   height: inherit;
 }
 
-body {
-  font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
   margin: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", "Trebuchet MS", "Lucida Grande",
+    "Bitstream Vera Sans", "Helvetica Neue", sans-serif;
+  color: #999;
+}
+
+header {
+  margin: 1em auto 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+  font-size: 2.5rem;
+}
+
+header > img {
+  max-width: 60px;
+}
+
+header + div > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+button {
+  width: 1.25em;
   text-align: center;
-  color: #293c4b;
+  font-size: 3rem;
+  background-color: #999;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-h1 {
-  font-size: 30px;
-}
-
-img {
-  margin: 20px 0;
-  max-width: 200px;
+button + div {
+  min-width: 2em;
+  text-align: center;
+  font-size: 3rem;
 }
