@@ -11,20 +11,20 @@
     "vite"
   ],
   "scripts": {
-    "elm_reactor_start": "npm run start -w elm_reactor",
-    "elm_reactor_build": "npm run build -w elm_reactor",
-    "elm-live_start": "npm run start -w elm-live",
-    "elm-live_build": "npm run build -w elm-live",
-    "webpack_start": "npm run start -w webpack",
-    "webpack_build": "npm run build -w webpack",
-    "create-elm-app_start": "npm run start -w create-elm-app",
-    "create-elm-app_build": "npm run build -w create-elm-app",
-    "parcel_start": "npm run start -w parcel",
-    "parcel_build": "npm run build -w parcel",
-    "esbuild_start": "npm run start -w esbuild",
-    "esbuild_build": "npm run build -w esbuild",
-    "vite_start": "npm run start -w vite",
-    "vite_build": "npm run build -w vite"
+    "start:elm_reactor": "npm run start -w elm_reactor",
+    "build:elm_reactor": "npm run build -w elm_reactor",
+    "start:elm-live": "npm run start -w elm-live",
+    "build:elm-live": "npm run build -w elm-live",
+    "start:webpack": "npm run start -w webpack",
+    "build:webpack": "npm run build -w webpack",
+    "start:create-elm-app": "npm run start -w create-elm-app",
+    "build:create-elm-app": "npm run build -w create-elm-app",
+    "start:parcel": "npm run start -w parcel",
+    "build:parcel": "npm run build -w parcel",
+    "start:esbuild": "npm run start -w esbuild",
+    "build:esbuild": "npm run build -w esbuild",
+    "start:vite": "npm run start -w vite",
+    "build:vite": "npm run build -w vite"
   },
   "devDependencies": {
     "elm-format": "^0.8.5"
