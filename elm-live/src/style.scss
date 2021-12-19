@@ -8,20 +8,23 @@
   margin: 0;
 }
 
-html {
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic,
-    "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo,
-    sans-serif;
-}
-
 body {
+  font-family: "Source Sans Pro", "Trebuchet MS", "Lucida Grande",
+    "Bitstream Vera Sans", "Helvetica Neue", sans-serif;
   color: #999;
 }
 
 header {
-  margin: 1em auto;
-  text-align: center;
-  font-size: 3rem;
+  margin: 1em auto 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+  font-size: 2.5rem;
+}
+
+header > img {
+  max-width: 60px;
 }
 
 header + div > div:first-child {
