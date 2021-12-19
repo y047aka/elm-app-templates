@@ -2,19 +2,21 @@
   "name": "elm-live",
   "private": true,
   "scripts": {
+    "clean": "rimraf dist",
     "watch:html": "cpx -w index.html dist",
     "watch:elm": "elm-live src/Main.elm --dir=dist --start-page=index.html --hot --open -- --debug --output=dist/elm.js",
     "watch:sass": "sass --watch src:dist",
     "watch:static": "cpx -w \"static/**/*\" dist/static",
+    "watch": "npm-run-all -p watch:*",
     "compile:html": "cpx index.html dist",
     "compile:elm": "elm make src/Main.elm --optimize --output=dist/elm.optimized.js",
     "compile:sass": "sass --style=compressed --no-source-map src:dist",
     "compile:static": "cpx \"static/**/*\" dist/static",
     "compile": "npm-run-all -p compile:*",
-    "minify": "google-closure-compiler --js=dist/elm.optimized.js --js_output_file=dist/elm.js",
+    "minify:elm": "google-closure-compiler --js=dist/elm.optimized.js --js_output_file=dist/elm.js",
     "postminify": "rimraf dist/elm.optimized.js",
-    "start": "npm-run-all -p watch:*",
-    "build": "npm run compile && npm run minify"
+    "start": "npm-run-all -s clean watch",
+    "build": "npm-run-all -s clean compile minify:elm"
   },
   "dependencies": {
     "cpx2": "^4.0.0",
