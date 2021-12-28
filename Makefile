@@ -27,6 +27,7 @@ build_elm-live:
 
 	mkdir docs/elm-live
 	cp -r ./elm-live/dist/* ./docs/elm-live
+	mv ./docs/elm-live/static ./docs
 
 .PHONY: build_webpack
 build_webpack:
@@ -40,7 +41,8 @@ build_parcel:
 	npm run build -w parcel
 
 	mkdir docs/parcel
-	cp -r ./parcel/dist/* ./docs/parcel
+	mv ./parcel/dist/index.html ./docs/parcel
+	cp -r ./parcel/dist/* ./docs
 
 .PHONY: build_esbuild
 build_esbuild:
@@ -54,4 +56,5 @@ build_vite:
 	npm run build -w vite
 
 	mkdir docs/vite
-	cp -r ./vite/dist/* ./docs/vite
+	cp ./vite/dist/index.html ./docs/vite
+	cp -r ./vite/dist/assets ./docs/
