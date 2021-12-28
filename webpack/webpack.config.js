@@ -1,4 +1,7 @@
 module.exports = {
+  output: {
+    assetModuleFilename: "static/[name][ext]",
+  },
   module: {
     rules: [
       {
@@ -21,7 +24,11 @@ module.exports = {
         test: /\.elm$/,
         exclude: [/elm-stuff/, /node_modules/],
         loader: "elm-webpack-loader",
-      }
+      },
+      {
+        test: /\.(jpe?g|png|svg)$/,
+        type: 'asset/resource'
+      },
     ]
   },
   devServer: {
