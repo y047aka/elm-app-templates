@@ -27,7 +27,7 @@ build_elm-live:
 
 	mkdir docs/elm-live
 	cp -r ./elm-live/dist/* ./docs/elm-live
-	mv ./docs/elm-live/static ./docs
+	cp ./common/elm-live/index.html ./docs/elm-live
 
 .PHONY: build_webpack
 build_webpack:
