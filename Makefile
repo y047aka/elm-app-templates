@@ -38,11 +38,10 @@ build_webpack:
 
 .PHONY: build_parcel
 build_parcel:
-	npm run build -w parcel
+	cd parcel && npx parcel build index.html --no-source-maps --public-url /elm-app-templates/parcel
 
 	mkdir docs/parcel
-	mv ./parcel/dist/index.html ./docs/parcel
-	cp -r ./parcel/dist/* ./docs
+	cp -r ./parcel/dist/* ./docs/parcel
 
 .PHONY: build_esbuild
 build_esbuild:
