@@ -27,14 +27,17 @@ header > img {
   max-width: 60px;
 }
 
-header + div {
+/* -----------------------------------------------------------------
+Counter
+----------------------------------------------------------------- */
+.counter {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5em;
 }
 
-button {
+.counter > button {
   width: 1.25em;
   text-align: center;
   font-size: 3rem;
@@ -45,7 +48,7 @@ button {
   cursor: pointer;
 }
 
-button + div {
+.counter > div {
   min-width: 2em;
   text-align: center;
   font-size: 3rem;
