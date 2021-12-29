@@ -38,7 +38,7 @@ build_webpack:
 
 .PHONY: build_parcel
 build_parcel:
-	cd parcel && npx parcel build index.html --no-source-maps --public-url /elm-app-templates/parcel
+	cd parcel && npx parcel build index.html --no-source-maps --public-url /elm-app-templates/parcel/
 
 	mkdir docs/parcel
 	cp -r ./parcel/dist/* ./docs/parcel
@@ -52,8 +52,7 @@ build_esbuild:
 
 .PHONY: build_vite
 build_vite:
-	npm run build -w vite
+	cd vite && npx vite build --base /elm-app-templates/vite/
 
 	mkdir docs/vite
-	cp ./vite/dist/index.html ./docs/vite
-	cp -r ./vite/dist/assets ./docs/
+	cp -r ./vite/dist/* ./docs/vite
