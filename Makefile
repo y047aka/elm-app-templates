@@ -6,6 +6,7 @@ clean:
 build:
 	make clean
 	mkdir docs
+	cp ./common/index.html ./docs
 
 	make build_elm_reactor
 	make build_elm-live
@@ -35,6 +36,7 @@ build_webpack:
 
 	mkdir docs/webpack
 	cp -r ./webpack/dist/* ./docs/webpack
+	cp ./common/webpack/index.html ./docs/webpack
 
 .PHONY: build_parcel
 build_parcel:
