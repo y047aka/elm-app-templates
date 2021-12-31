@@ -14,6 +14,7 @@ build:
 	make build_parcel
 	make build_esbuild
 	make build_vite
+	make build_snowpack
 
 .PHONY: build_elm_reactor
 build_elm_reactor:
@@ -58,3 +59,10 @@ build_vite:
 
 	mkdir docs/vite
 	cp -r ./vite/dist/* ./docs/vite
+
+.PHONY: build_snowpack
+build_snowpack:
+	npm run build -w snowpack
+
+	mkdir docs/snowpack
+	cp -r ./snowpack/build/* ./docs/snowpack

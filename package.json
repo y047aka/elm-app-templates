@@ -7,7 +7,8 @@
     "webpack",
     "parcel",
     "esbuild",
-    "vite"
+    "vite",
+    "snowpack"
   ],
   "scripts": {
     "start:elm_reactor": "npm run start -w elm_reactor",
@@ -15,7 +16,8 @@
     "start:webpack": "npm run start -w webpack",
     "start:parcel": "npm run start -w parcel",
     "start:esbuild": "npm run start -w esbuild",
-    "start:vite": "npm run start -w vite"
+    "start:vite": "npm run start -w vite",
+    "start:snowpack": "npm run start -w snowpack"
   },
   "devDependencies": {
     "elm-format": "^0.8.5"

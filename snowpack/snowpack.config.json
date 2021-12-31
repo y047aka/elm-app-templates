@@ -1,0 +1,15 @@
+{
+  "mount": {
+    "public": "/",
+    "src": "/"
+  },
+  "plugins": [
+    [
+      "snowpack-plugin-elm",
+      { "verbose": true, "debugger": "dev", "optimize": "build" }
+    ]
+  ],
+  "devOptions": {
+    "output": "stream"
+  }
+}
