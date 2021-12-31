@@ -2,8 +2,8 @@
   "name": "webpack",
   "private": true,
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack serve --mode development"
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
   },
   "devDependencies": {
     "css-loader": "^6.5.1",
