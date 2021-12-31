@@ -14,7 +14,7 @@
     "compile:static": "cpx \"static/**/*\" dist/static",
     "compile": "npm-run-all -p compile:*",
     "minify:elm": "google-closure-compiler --js=dist/elm.optimized.js --js_output_file=dist/elm.js",
-    "postminify": "rimraf dist/elm.optimized.js",
+    "postminify:elm": "rimraf dist/elm.optimized.js",
     "start": "npm-run-all -s clean watch",
     "build": "npm-run-all -s clean compile minify:elm"
   },
