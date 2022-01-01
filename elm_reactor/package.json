@@ -1,6 +1,4 @@
 {
-  "name": "elm_reactor",
-  "private": true,
   "scripts": {
     "start": "cd src && elm reactor",
     "build": "elm make src/Main.elm --output=dist/index.html --optimize"

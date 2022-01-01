@@ -1,11 +1,10 @@
 {
-  "name": "esbuild",
-  "private": true,
   "scripts": {
     "start": "node ./serve.js",
     "build": "node ./build.js"
   },
   "dependencies": {
+    "elm": "^0.19.1-5",
     "esbuild": "^0.14.5",
     "esbuild-plugin-elm": "^0.0.8"
   }

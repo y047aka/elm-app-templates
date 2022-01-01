@@ -1,6 +1,4 @@
 {
-  "name": "parcel",
-  "private": true,
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html --no-source-maps"

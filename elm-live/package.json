@@ -1,6 +1,4 @@
 {
-  "name": "elm-live",
-  "private": true,
   "scripts": {
     "clean": "rimraf dist",
     "watch:html": "cpx -w index.html dist",
