@@ -62,7 +62,7 @@ build_vite:
 
 .PHONY: build_snowpack
 build_snowpack:
-	npm run build -w snowpack
+	cd snowpack && npx snowpack build --baseUrl /elm-app-templates/snowpack/
 
 	mkdir docs/snowpack
 	cp -r ./snowpack/build/* ./docs/snowpack
