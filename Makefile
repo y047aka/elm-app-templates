@@ -12,15 +12,15 @@ install:
 	cd vite && npm install
 	cd snowpack && npm install
 
-.PHONY: clean
-clean:
-	rm -r docs
-
 .PHONY: build
 build:
-	make clean
-	mkdir docs
-	cp ./common/index.html ./docs
+	rm -r docs/elm_reactor
+	rm -r docs/elm-live
+	rm -r docs/webpack
+	rm -r docs/parcel
+	rm -r docs/esbuild
+	rm -r docs/vite
+	rm -r docs/snowpack
 
 	make build_elm_reactor
 	make build_elm-live
