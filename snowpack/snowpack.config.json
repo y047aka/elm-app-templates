@@ -9,5 +9,10 @@
       { "verbose": true, "debugger": "dev", "optimize": "build" }
     ],
     "@snowpack/plugin-sass" 
-  ]
+  ],
+  "optimize": {
+    "bundle": true,
+    "sourcemap": false,
+    "minify": true
+  }
 }
