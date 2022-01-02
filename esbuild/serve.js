@@ -9,10 +9,7 @@ esbuild.serve({
   entryPoints: ["src/index.js"],
   bundle: true,
   plugins: [
-    ElmPlugin({
-      debug: true,
-      clearOnWatch: true,
-    }),
+    ElmPlugin({ debug: true }),
   ],
 }).then(result => {
   // The result tells us where esbuild's local server is

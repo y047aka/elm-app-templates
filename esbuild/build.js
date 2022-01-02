@@ -6,11 +6,9 @@ esbuild.build({
   entryPoints: ["src/index.js"],
   bundle: true,
   outdir: "dist",
+  minify: true,
   watch: process.argv.includes("--watch"),
   plugins: [
-    ElmPlugin({
-      debug: true,
-      clearOnWatch: true,
-    }),
+    ElmPlugin({ optimize: true }),
   ],
 }).catch(() => process.exit(1));
