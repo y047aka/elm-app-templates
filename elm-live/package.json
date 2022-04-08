@@ -17,12 +17,12 @@
     "build": "npm-run-all -s clean compile minify:elm"
   },
   "dependencies": {
-    "cpx2": "^4.0.0",
+    "cpx2": "^4.2.0",
     "elm": "^0.19.1-5",
-    "google-closure-compiler": "^20211201.0.0",
+    "google-closure-compiler": "^20220405.0.0",
     "npm-run-all2": "^5.0.2",
     "rimraf": "^3.0.2",
-    "sass": "^1.45.0"
+    "sass": "^1.50.0"
   },
   "devDependencies": {
     "elm-live": "^4.0.2"
