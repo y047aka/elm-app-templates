@@ -25,6 +25,7 @@
     "sass": "^1.50.0"
   },
   "devDependencies": {
+    "elm-format": "^0.8.5",
     "elm-live": "^4.0.2"
   }
 }
