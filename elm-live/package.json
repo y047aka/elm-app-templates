@@ -16,16 +16,14 @@
     "start": "npm-run-all -s clean watch",
     "build": "npm-run-all -s clean compile minify:elm"
   },
-  "dependencies": {
+  "devDependencies": {
     "cpx2": "^4.2.0",
     "elm": "^0.19.1-5",
-    "google-closure-compiler": "^20220405.0.0",
-    "npm-run-all2": "^5.0.2",
-    "rimraf": "^3.0.2",
-    "sass": "^1.50.0"
-  },
-  "devDependencies": {
     "elm-format": "^0.8.5",
-    "elm-live": "^4.0.2"
+    "elm-live": "^4.0.2",
+    "google-closure-compiler": "^20221004.0.0",
+    "npm-run-all2": "^6.0.2",
+    "rimraf": "^3.0.2",
+    "sass": "^1.55.0"
   }
 }

@@ -3,13 +3,11 @@
     "start": "snowpack dev",
     "build": "snowpack build"
   },
-  "dependencies": {
+  "devDependencies": {
     "@snowpack/plugin-sass": "^1.4.0",
     "elm": "^0.19.1-5",
+    "elm-format": "^0.8.5",
     "snowpack": "^3.8.8",
     "snowpack-plugin-elm": "^0.5.1"
-  },
-  "devDependencies": {
-    "elm-format": "^0.8.5"
   }
 }

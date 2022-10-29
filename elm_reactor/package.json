@@ -3,10 +3,8 @@
     "start": "cd src && elm reactor",
     "build": "elm make src/Main.elm --output=dist/index.html --optimize"
   },
-  "dependencies": {
-    "elm": "^0.19.1-5"
-  },
   "devDependencies": {
+    "elm": "^0.19.1-5",
     "elm-format": "^0.8.5"
   }
 }

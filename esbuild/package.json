@@ -3,12 +3,10 @@
     "start": "node ./serve.js",
     "build": "node ./build.js"
   },
-  "dependencies": {
-    "elm": "^0.19.1-5",
-    "esbuild": "^0.14.34",
-    "esbuild-plugin-elm": "^0.0.8"
-  },
   "devDependencies": {
-    "elm-format": "^0.8.5"
+    "elm": "^0.19.1-5",
+    "elm-format": "^0.8.5",
+    "esbuild": "^0.15.12",
+    "esbuild-plugin-elm": "^0.0.11-1"
   }
 }
