@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "start": "run-pty % elm-watch hot % npm run esbuild -- --serve=9000 --servedir=public",
+    "build": "elm-watch make --optimize && npm run esbuild -- --minify",
+    "esbuild": "esbuild app.ts --bundle --outdir=public/build --public-path=/build/"
+  },
+  "devDependencies": {
+    "elm": "^0.19.1-5",
+    "elm-format": "^0.8.5",
+    "elm-watch": "^1.0.2",
+    "esbuild": "^0.15.12",
+    "run-pty": "^4.0.2"
+  }
+}

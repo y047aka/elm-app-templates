@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>elm-watch</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="/static/logo.svg" />
+      <span>elm-watch</span>
+    </header>
+    <div id="root"></div>
+    <script src="build/main.js"></script>
+    <script>
+      Elm.Main.init({ node: document.getElementById("root") });
+    </script>
+  </body>
+</html>
