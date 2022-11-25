@@ -5,7 +5,6 @@ all:
 .PHONY: install
 install: 
 	cd elm_reactor && npm install
-	cd elm-live && npm install
 	cd webpack && npm install
 	cd parcel && npm install
 	cd esbuild && npm install
@@ -14,14 +13,12 @@ install:
 .PHONY: build
 build:
 	rm -r docs/elm_reactor
-	rm -r docs/elm-live
 	rm -r docs/webpack
 	rm -r docs/parcel
 	rm -r docs/esbuild
 	rm -r docs/vite
 
 	make build_elm_reactor
-	make build_elm-live
 	make build_webpack
 	make build_parcel
 	make build_esbuild
@@ -33,14 +30,6 @@ build_elm_reactor:
 
 	mkdir docs/elm_reactor
 	cp -r ./elm_reactor/dist/* ./docs/elm_reactor
-
-.PHONY: build_elm-live
-build_elm-live:
-	cd elm-live && npm run build
-
-	mkdir docs/elm-live
-	cp -r ./elm-live/dist/* ./docs/elm-live
-	cp ./common/elm-live/index.html ./docs/elm-live
 
 .PHONY: build_webpack
 build_webpack:

@@ -1,8 +1,0 @@
-# Dependency directories
-node_modules
-
-# elm-package generated files
-elm-stuff
-
-# Distribution
-dist
