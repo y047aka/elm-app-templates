@@ -10,7 +10,6 @@ install:
 	cd parcel && npm install
 	cd esbuild && npm install
 	cd vite && npm install
-	cd snowpack && npm install
 
 .PHONY: build
 build:
@@ -20,7 +19,6 @@ build:
 	rm -r docs/parcel
 	rm -r docs/esbuild
 	rm -r docs/vite
-	rm -r docs/snowpack
 
 	make build_elm_reactor
 	make build_elm-live
@@ -28,7 +26,6 @@ build:
 	make build_parcel
 	make build_esbuild
 	make build_vite
-	make build_snowpack
 
 .PHONY: build_elm_reactor
 build_elm_reactor:
@@ -73,10 +70,3 @@ build_vite:
 
 	mkdir docs/vite
 	cp -r ./vite/dist/* ./docs/vite
-
-.PHONY: build_snowpack
-build_snowpack:
-	cd snowpack && npx snowpack build --baseUrl /elm-app-templates/snowpack/
-
-	mkdir docs/snowpack
-	cp -r ./snowpack/build/* ./docs/snowpack
