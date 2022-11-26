@@ -1,9 +1,9 @@
 .PHONY: all
-all: 
+all:
 	make install build
 
 .PHONY: install
-install: 
+install:
 	cd elm_reactor && npm install
 	cd elm-watch && npm install
 	cd webpack && npm install
@@ -26,6 +26,9 @@ build:
 	make build_parcel
 	make build_esbuild
 	make build_vite
+
+	rm -r docs/static
+	cp -r ./elm-watch/public/static ./docs/static
 
 .PHONY: build_elm_reactor
 build_elm_reactor:
