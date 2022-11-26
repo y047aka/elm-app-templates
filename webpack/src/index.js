@@ -1,7 +1,7 @@
 "use strict";
 
 import "./index.html";
-import "./style.scss";
+import "./style.css";
 import { Elm } from "./Main.elm";
 import "../static/logo.svg"
 
