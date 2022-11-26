@@ -7,7 +7,6 @@
     "@parcel/transformer-elm": "^2.7.0",
     "@parcel/transformer-sass": "^2.7.0",
     "elm-format": "^0.8.5",
-    "elm-test": "^0.19.1-revision7",
     "parcel": "^2.7.0"
   }
 }
