@@ -5,6 +5,7 @@ all:
 .PHONY: install
 install: 
 	cd elm_reactor && npm install
+	cd elm-watch && npm install
 	cd webpack && npm install
 	cd parcel && npm install
 	cd esbuild && npm install
@@ -13,12 +14,14 @@ install:
 .PHONY: build
 build:
 	rm -r docs/elm_reactor
+	rm -r docs/elm-watch
 	rm -r docs/webpack
 	rm -r docs/parcel
 	rm -r docs/esbuild
 	rm -r docs/vite
 
 	make build_elm_reactor
+	make build_elm-watch
 	make build_webpack
 	make build_parcel
 	make build_esbuild
@@ -30,6 +33,13 @@ build_elm_reactor:
 
 	mkdir docs/elm_reactor
 	cp -r ./elm_reactor/dist/* ./docs/elm_reactor
+
+.PHONY: build_elm-watch
+build_elm-watch:
+	cd elm-watch && npm run build
+
+	mkdir docs/elm-watch
+	cp -r ./elm-watch/public/* ./docs/elm-watch
 
 .PHONY: build_webpack
 build_webpack:

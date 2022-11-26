@@ -1,8 +1,8 @@
 module Main exposing (main)
 
 import Browser
-import Html exposing (Html, button, div, text)
-import Html.Attributes exposing (class)
+import Html exposing (Html, button, div, header, img, span, text)
+import Html.Attributes exposing (class, src)
 import Html.Events exposing (onClick)
 
 
@@ -54,8 +54,14 @@ update msg model =
 
 view : Model -> Html Msg
 view model =
-    div [ class "counter" ]
-        [ button [ onClick Decrement ] [ text "-" ]
-        , div [] [ text (String.fromInt model) ]
-        , button [ onClick Increment ] [ text "+" ]
+    div []
+        [ header []
+            [ img [ src "/static/logo.svg" ] []
+            , span [] [ text "elm-watch" ]
+            ]
+        , div [ class "counter" ]
+            [ button [ onClick Decrement ] [ text "-" ]
+            , div [] [ text (String.fromInt model) ]
+            , button [ onClick Increment ] [ text "+" ]
+            ]
         ]
