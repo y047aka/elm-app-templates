@@ -56,7 +56,7 @@ view : Model -> Html Msg
 view model =
     div []
         [ header []
-            [ img [ src "/static/logo.svg" ] []
+            [ img [ src "./static/logo.svg" ] []
             , span [] [ text "elm-watch" ]
             ]
         , div [ class "counter" ]

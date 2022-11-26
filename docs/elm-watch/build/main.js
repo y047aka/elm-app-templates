@@ -5224,7 +5224,7 @@ var $author$project$Main$view = function (model) {
 						$elm$html$Html$img,
 						_List_fromArray(
 							[
-								$elm$html$Html$Attributes$src('/static/logo.svg')
+								$elm$html$Html$Attributes$src('./static/logo.svg')
 							]),
 						_List_Nil),
 						A2(
