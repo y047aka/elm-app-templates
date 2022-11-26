@@ -23,8 +23,13 @@ header {
   font-size: 2.5rem;
 }
 
-header > img {
-  max-width: 60px;
+header::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url("/static/logo.svg");
+  background-repeat: no-repeat;
 }
 
 /* -----------------------------------------------------------------

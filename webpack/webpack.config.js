@@ -23,10 +23,6 @@ module.exports = {
         exclude: [/elm-stuff/, /node_modules/],
         loader: "elm-webpack-loader",
       },
-      {
-        test: /\.(jpe?g|png|svg)$/,
-        type: 'asset/resource'
-      },
     ]
   },
   devServer: {
